@@ -1,0 +1,174 @@
+/* MY CUSTOM CSS for INKDOME */
+
+/*Google Font Import MONTSERRAT*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --jumbotron-padding-y: 5rem;
+}
+
+h5.inkdome-title {
+  margin-top:10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+.jumbotron {
+  padding: 5rem;
+  position: relative;
+  background: rgba(17, 17, 17, 0.8); /* If our image is bright, we can tone it down with this darker overlay */
+}
+
+.jumbotron:after {
+  content: "";
+  position: absolute;
+  background-image: url("/images/hero.jpg"); no-repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.8;
+  /* Inserito parallax effect qui */
+  height: 100%;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h4.artist-name{
+  padding-top: 0.8em;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 3px;
+}
+
+hr {
+  height:1px;
+  border:none;
+  background-color:white;
+  opacity: 0.25;
+  margin-top: 0;
+}
+
+p.lead.text-muted{
+  color: white !important;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 200;
+  padding: 0.5em;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+}
+a:hover{
+  color: #007ee5;
+  text-decoration: none;
+}
+
+
+p.lead {
+  color: white !important;
+  font-size: 26px;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* p.author {
+  margin-top: 10px;
+  font-size: 10px;
+  padding: 0;
+  font-weight: 100;
+  color: white !important;
+} */
+
+.btn.btn-secondary.my-2{
+  text-transform: uppercase;
+}
+
+.btn.btn-secondary.btn-md {
+  background-color: #4267b2;
+  border: #4267b2;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  background: #4267b2;
+  margin-bottom: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  max-height: 20vh !important;
+}
+
+footer p {
+margin-bottom: .25rem;
+}
+
+.container#my-footer {
+  padding-bottom: 1em;
+}
+
+p.message{
+  margin: 0em;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.container.hero{
+margin-top: -5em;
+}
+
+.container.cards{
+  margin-top: -8em;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  display: none;
+  border: none;
+}
+
+.card.mb-4.box-shadow.animated.pulse {
+  animation-play-state: paused;
+}
+
+.card.mb-4.box-shadow.animated.pulse:hover {
+  animation-play-state: running;
+}
+
