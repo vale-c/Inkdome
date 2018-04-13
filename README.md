@@ -1,5 +1,8 @@
 # Inkdome
+
 Tattoo Artist Page for Inkdome Website
+
+### This is the Tattoo Artist Page I created for INKDOME, a creative startup based in Milan and accelerated by Luiss Enlabs.
 
 #### Desktop Version (with fixed footer)
 
