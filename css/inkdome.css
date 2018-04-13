@@ -1,6 +1,6 @@
 /* MY CUSTOM CSS for INKDOME */
 
-/*Google Font Import MONTSERRAT*/
+/*Google Font Import MONTSERRAT (same as the original Wordpress THEME*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700');
 
 *{
@@ -68,14 +68,23 @@ p.lead.text-muted{
   letter-spacing: 3px;
 }
 
-a {
+.fb {
   text-decoration: none;
   color: white;
-
 }
-a:hover{
+
+fb:hover{
   color: #007ee5;
   text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
 }
 
 
